@@ -1,0 +1,33 @@
+.header {
+  height: 48px;
+  box-shadow: $box-shadow;
+
+  &__container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__nav {
+    &-list {
+      display: flex;
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+      height: 48px;
+      padding-inline: 35px;
+      color: $color-gray;
+      font-weight: 500;
+      line-height: 16px;
+      letter-spacing: 1.25px;
+
+      &--active {
+        color: $color-green;
+        border-bottom: 2px solid $color-green;
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.search {
+  width: 936px;
+  display: flex;
+  align-items: center;
+  border: $border;
+  border-radius: $border-radius;
+  padding: 16px;
+
+  &__input {
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    background-color: transparent;
+
+    &::placeholder {
+      color: $color-gray-alt;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__btn {
+    height: 24px;
+  }
+}
